@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <%- include ('navbar') -%>
+        <div class="day-container">
+            <h1>HOME</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil eaque accusantium, animi voluptatibus,
+                quia
+                magni veniam nisi ad velit id neque numquam natus eveniet! Non eius odit iure quibusdam cumque at ab ea?
+                Odit sint enim corporis a veritatis eos!</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, nulla. Quis voluptates, impedit,
+            cupiditate quia quibusdam, doloremque laborum ut sed quos laboriosam quidem! Dolores, nisi! Culpa velit
+            ipsum, porro minus sint praesentium necessitatibus atque cum voluptate nostrum placeat veniam neque!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In excepturi doloremque provident id, non sequi
+            labore omnis tempora. Sed, ratione modi, dolor eum est officia fugiat accusantium nemo voluptatum beatae
+            temporibus ipsam rem!
+        </div>
+
+        <!-- <div class="day-container">
+            <h1>Day 1</h1>
+            <br>
+            <p>Lorem, ipsum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti incidunt nihil, magni
+                impedit possimus suscipit nesciunt accusamus error minus animi!</p>
+        </div> -->
+        <div class="container">
+            <% for( let index=0; index < posts.length; index++ ) { %>
+                <h1>
+                    <%= posts[index].title %>
+                </h1>
+                <br>
+                <p>
+                    <%= posts[index].details.substring(0, 100)%>....
+                    <br>
+                    <br>
+                    <a href="/blog/<%= posts[index].title %>">Read more</a>
+                </p>
+                <br>
+                <br>
+                <% } %>
+        </div>
+
+
+</body>
+
+</html>

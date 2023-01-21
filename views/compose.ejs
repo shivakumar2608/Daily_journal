@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compose</title>
+    <link rel="stylesheet" href="css/composs.css">
+</head>
+<body>
+    <%- include ('navbar') -%>
+    <div class="day-container">
+        <h1>Compose!</h1>
+        <br>
+        <form class="form" action="/compose" method="post">
+            <label for="title">Title: </label>
+            <br>
+            <input type="text" name="title" id="title" placeholder=""> <br>
+            <br>
+            <!-- <input  type="textArea" id="details" name="details" class="details"> <br> -->
+            <label for="details">Description: </label> <br>
+            <textarea name="details" id="details" cols="20" rows="5"></textarea>
+            <br>    
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
